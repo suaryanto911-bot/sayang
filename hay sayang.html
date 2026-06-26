@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan untuk Pacar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        padding: 40px 32px;
+        max-width: 520px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: 2.4rem;
+        color: #e471ed;
+      }
+      H2 {
+        margin: 0 0 16px;
+        font-size: 2rem;
+        color: #ef7cb8;
+      }
+
+      p {
+        margin: 0 0 18px;
+        line-height: 1.8;
+        font-size: 1rem;
+      }
+
+      .heart {
+        color: #d64161;
+        font-size: 2rem;
+        margin: 0 4px;
+        animation: beat 1.2s infinite;
+      }
+
+      @keyframes beat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.15);
+        }
+      }
+
+      .button {
+        background: #ff758c;
+        border: none;
+        border-radius: 999px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 14px 26px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 22px rgba(255, 117, 140, 0.25);
+      }
+
+      .secret {
+        display: none;
+        margin-top: 24px;
+        background: #fff2f4;
+        padding: 22px;
+        border-radius: 18px;
+        border: 1px solid #ffd4dd;
+      }
+
+      .secret.visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HAYYYYYY SAYANGGGGGGGGGGG</h1>
+      <h2>NAZWA RISMA RAMADHANIA</h2>
+      <p>
+        Aku ingin kamu tahu bahwa setiap hari bersamamu membuat hidupku jadi
+        lebih indah. Terima kasih sudah menjadi alasan senyumku ya sayangku.
+      </p>
+      <div>
+        <span class="heart">❤️</span>
+        <span class="heart">💕</span>
+        <span class="heart">💖</span>
+      </div>
+      <button class="button" id="showMessage">
+        buka pesan ini atau aku buka baju kamu
+      </button>
+      <div class="secret" id="secretMessage">
+        <p>
+          Sayang, kamu adalah pelangi di hari-hariku. Semoga kita selalu bersama
+          dan saling mendukung dalam setiap langkah. LOVEE U SAYANGGGGGG
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const button = document.getElementById("showMessage");
+      const secret = document.getElementById("secretMessage");
+
+      button.addEventListener("click", () => {
+        secret.classList.toggle("visible");
+        button.textContent = secret.classList.contains("visible")
+          ? "hehehheehehehe"
+          : "buka atau aku buka baju kamu";
+      });
+    </script>
+  </body>
+</html>
